@@ -13,10 +13,28 @@ var itemsData = {
     image: 'https://images.unsplash.com/photo-1588013273468-315fd88ea34c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'
   },
   item3: {
-    name: 'Calzone',
+    name: 'Fettuccine Alfredo',
+    price: 8.99,
+    description: 'Fettucine Alfredo Description.',
+    image: 'https://images.unsplash.com/photo-1561001070-ce11eea271b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80'
+  },
+  item4: {
+    name: 'Spaghetti and Meatballs',
+    price: 8.99,
+    description: 'Spaghetti and Meatballs Description.',
+    image: 'https://images.unsplash.com/photo-1610545676806-14c7ab3ce782?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80'
+  },
+  item5: {
+    name: 'Chicken Parmesan',
     price: 9.99,
-    description: 'Calzone.',
-    image: 'https://images.unsplash.com/photo-1628824851008-ec3ab4b45527?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80'
+    description: 'Chicken Parmesan Description.',
+    image: 'https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+  },
+  item6: {
+    name: 'Lasagna',
+    price: 10.99,
+    description: 'Lasagna Description.',
+    image: 'https://images.unsplash.com/photo-1662102776673-c96490a30c80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1678&q=80'
   }
 };
 
