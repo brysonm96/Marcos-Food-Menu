@@ -6,14 +6,14 @@ window.onload = function() {
         description: "Description of Item 1",
         price: "$10.99",
         imageUrl: "item1.jpg",
-        pageUrl: "C:\Users\bryso\Documents\School\WDD330\Final Project\WDD-330-Final-Project\item1.html"
+        pageUrl: "item1.html"
       },
       {
         name: "Item 2",
         description: "Description of Item 2",
         price: "$8.99",
         imageUrl: "item2.jpg",
-        pageUrl: "C:\Users\bryso\Documents\School\WDD330\Final Project\WDD-330-Final-Project\item2.html"
+        pageUrl: "item2.html"
       },
       // Add more food items here
     ];
