@@ -7,10 +7,10 @@ var itemsData = {
     image: 'https://images.unsplash.com/photo-1677027472626-c7c40c74ac6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'
   },
   item2: {
-    name: 'Item 2',
-    price: 14.99,
-    description: 'This is the second item.',
-    image: 'https://example.com/item2.jpg'
+    name: 'Spaghetti Carbonara',
+    price: 8.99,
+    description: 'Spaghetti Carbonara.',
+    image: 'https://images.unsplash.com/photo-1588013273468-315fd88ea34c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'
   },
   item3: {
     name: 'Item 3',
