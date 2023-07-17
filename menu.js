@@ -1,6 +1,3 @@
-// Get the div element to populate
-var itemInfo = document.getElementById('item-info');
-
 // Example data for each item
 var itemsData = {
   item1: {
@@ -23,14 +20,16 @@ var itemsData = {
   }
 };
 
-// Get the current item page filename
-var currentPage = window.location.pathname.split('/').pop();
-var currentItemData = itemsData[currentPage];
+// Function to populate item information
+function populateItemInfo(itemKey) {
+  var itemInfo = document.getElementById('item-info');
+  var currentItemData = itemsData[itemKey];
 
-// Populate the item information
-itemInfo.innerHTML = `
-  <h2>${currentItemData.name}</h2>
-  <p>Price: $${currentItemData.price.toFixed(2)}</p>
-  <p>${currentItemData.description}</p>
-  <img src="${currentItemData.image}" alt="${currentItemData.name}">
-`;
+  // Populate the item information
+  itemInfo.innerHTML = `
+    <h2>${currentItemData.name}</h2>
+    <p>Price: $${currentItemData.price.toFixed(2)}</p>
+    <p>${currentItemData.description}</p>
+    <img src="${currentItemData.image}" alt="${currentItemData.name}">
+  `;
+}
