@@ -38,3 +38,9 @@ function populateItemInfo(itemKey) {
     itemInfo.innerHTML = 'Item not found.';
   }
 }
+
+// Get the current page's file name
+var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+
+// Populate item information based on the current page
+populateItemInfo(currentPage);
