@@ -1,5 +1,6 @@
-// Get the div element to populate
-var itemInfo = document.getElementById('item-info');
+// Get the div elements to populate
+var imageSection = document.getElementById('image-section');
+var descriptionSection = document.getElementById('description-section');
 
 // Example data
 var itemData = {
@@ -15,8 +16,8 @@ image.src = itemData.image;
 image.alt = itemData.name;
 imageSection.appendChild(image);
 
-// Populate the div with item information
-itemInfo.innerHTML = `
+// Populate the description section
+descriptionSection.innerHTML = `
   <h2>${itemData.name}</h2>
   <p>Price: $${itemData.price.toFixed(2)}</p>
   <p>${itemData.description}</p>
