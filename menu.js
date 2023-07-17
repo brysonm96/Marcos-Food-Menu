@@ -1,24 +1,36 @@
-// Get the div elements to populate
-var imageSection = document.getElementById('image-section');
-var descriptionSection = document.getElementById('description-section');
+// Get the div element to populate
+var itemInfo = document.getElementById('item-info');
 
-// Example data
-var itemData = {
-  name: 'Example Item',
-  price: 9.99,
-  description: 'This is an example item description.',
-  image: 'https://example.com/image.jpg'
+// Example data for each item
+var itemsData = {
+  item1: {
+    name: 'Item 1',
+    price: 9.99,
+    description: 'This is the first item.',
+    image: 'https://example.com/item1.jpg'
+  },
+  item2: {
+    name: 'Item 2',
+    price: 14.99,
+    description: 'This is the second item.',
+    image: 'https://example.com/item2.jpg'
+  },
+  item3: {
+    name: 'Item 3',
+    price: 19.99,
+    description: 'This is the third item.',
+    image: 'https://example.com/item3.jpg'
+  }
 };
 
-// Populate the image section
-var image = document.createElement('img');
-image.src = itemData.image;
-image.alt = itemData.name;
-imageSection.appendChild(image);
+// Get the current item page filename
+var currentPage = window.location.pathname.split('/').pop();
+var currentItemData = itemsData[currentPage];
 
-// Populate the description section
-descriptionSection.innerHTML = `
-  <h2>${itemData.name}</h2>
-  <p>Price: $${itemData.price.toFixed(2)}</p>
-  <p>${itemData.description}</p>
+// Populate the item information
+itemInfo.innerHTML = `
+  <h2>${currentItemData.name}</h2>
+  <p>Price: $${currentItemData.price.toFixed(2)}</p>
+  <p>${currentItemData.description}</p>
+  <img src="${currentItemData.image}" alt="${currentItemData.name}">
 `;
