@@ -23,13 +23,25 @@ var itemsData = {
 // Function to populate item information
 function populateItemInfo(itemKey) {
   var itemInfo = document.getElementById('item-info');
-  var currentItemData = itemsData[itemKey];
+  var currentItemData;
+
+  if (itemKey) {
+    currentItemData = itemsData[itemKey];
+  } else {
+    // If no item key is provided, use the current page's file name as the item key
+    var currentPage = window.location.pathname.split('/').pop();
+    currentItemData = itemsData[currentPage.replace('.html', '')];
+  }
 
   // Populate the item information
-  itemInfo.innerHTML = `
-    <h2>${currentItemData.name}</h2>
-    <p>Price: $${currentItemData.price.toFixed(2)}</p>
-    <p>${currentItemData.description}</p>
-    <img src="${currentItemData.image}" alt="${currentItemData.name}">
-  `;
+  if (currentItemData) {
+    itemInfo.innerHTML = `
+      <h2>${currentItemData.name}</h2>
+      <p>Price: $${currentItemData.price.toFixed(2)}</p>
+      <p>${currentItemData.description}</p>
+      <img src="${currentItemData.image}" alt="${currentItemData.name}">
+    `;
+  } else {
+    itemInfo.innerHTML = 'Item not found.';
+  }
 }
