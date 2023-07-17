@@ -3,11 +3,19 @@
 <head>
   <title>Item 6</title>
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
+      display: flex;
+      flex-direction: column;
       background-color: #FFCC99;
     }
 
-    .header {
+    .header, .footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -15,18 +23,18 @@
       padding: 10px; /* Add padding for the header */
     }
 
-    .header img {
+    .header img, .footer img {
       width: 50px;
       height: 50px;
     }
 
-    .header h1 {
+    .header h1, .footer p {
       text-align: center;
     }
 
-    .item-info img{
-      width: 500px;
-      height: 300px;
+    .content {
+      flex: 1;
+      padding: 20px;
     }
   </style>
 </head>
@@ -38,7 +46,12 @@
   </div>
 
   <a href="index.html">Home</a>
-  <div id="item-info"></div>
+  <div class="content" id="item-info"></div>
+
+  <div class="footer">
+    <img src="marcologo.png" alt="Logo"> <!-- Replace "logo.png" with the path to your logo image -->
+    <p>Not a real business</p>
+  </div>
 
   <script src="menu.js"></script>
 </body>
