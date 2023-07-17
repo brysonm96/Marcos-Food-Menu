@@ -13,10 +13,10 @@ var itemsData = {
     image: 'https://images.unsplash.com/photo-1588013273468-315fd88ea34c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'
   },
   item3: {
-    name: 'Item 3',
-    price: 19.99,
-    description: 'This is the third item.',
-    image: 'https://example.com/item3.jpg'
+    name: 'Calzone',
+    price: 9.99,
+    description: 'Calzone.',
+    image: 'https://images.unsplash.com/photo-1628824851008-ec3ab4b45527?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80'
   }
 };
 
