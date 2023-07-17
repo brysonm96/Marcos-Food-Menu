@@ -1,10 +1,10 @@
 // Example data for each item
 var itemsData = {
   item1: {
-    name: 'Item 1',
-    price: 9.99,
-    description: 'This is the first item.',
-    image: 'https://example.com/item1.jpg'
+    name: 'Meat Lovers Pizza',
+    price: 11.99,
+    description: 'Pizza topped with various italian meats.',
+    image: 'https://images.unsplash.com/photo-1677027472626-c7c40c74ac6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'
   },
   item2: {
     name: 'Item 2',
