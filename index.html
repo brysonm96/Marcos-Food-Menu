@@ -3,13 +3,22 @@
 <head>
   <title>Marco's Italian Kitchen</title>
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
+      display: flex;
+      flex-direction: column;
       background-color: #FFCC99;
     }
 
     ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
 
     li {
@@ -29,8 +38,12 @@
       height: 50px;
     }
 
-    .header h1, .footer h1 {
+    .header h1, .footer p {
       text-align: center;
+    }
+
+    .content {
+      flex: 1;
     }
   </style>
 </head>
@@ -42,20 +55,22 @@
     <a href="https://www.facebook.com"><img src="facebooklogo.png" alt="Logo"></a>
   </div>
 
-  <ul>
-    <li><a href="item1.html">Meat Lovers Pizza</a></li>
-    <li><a href="item2.html">Spaghetti Carbonara</a></li>
-    <li><a href="item3.html">Fettuccine Alfredo</a></li>
-    <li><a href="item4.html">Spaghetti and Meatballs</a></li>
-    <li><a href="item5.html">Chicken Parmesan</a></li>
-    <li><a href="item6.html">Lasagna</a></li>
-  </ul>
+  <div class="content">
+    <ul>
+      <li><a href="item1.html">Meat Lovers Pizza</a></li>
+      <li><a href="item2.html">Spaghetti Carbonara</a></li>
+      <li><a href="item3.html">Fettuccine Alfredo</a></li>
+      <li><a href="item4.html">Spaghetti and Meatballs</a></li>
+      <li><a href="item5.html">Chicken Parmesan</a></li>
+      <li><a href="item6.html">Lasagna</a></li>
+    </ul>
 
-  <script src="menu.js"></script>
+    <script src="menu.js"></script>
+  </div>
 
   <div class="footer">
     <img src="marcologo.png" alt="Logo"> <!-- Replace "logo.png" with the path to your logo image -->
     <p>Not a real business</p>
   </div>
 </body>
-</html
+</html>
